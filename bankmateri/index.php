@@ -1,5 +1,5 @@
 <?php
-include("./inc/header.php");
+include("../inc/header.php");
 ?>
 <div class="position-relative" style="z-index:1;">
   <div class="container">
@@ -51,5 +51,5 @@ include("./inc/header.php");
   </div>
 </div>
 <?php
-include("./inc/footer.php")
+include("../inc/footer.php")
 ?>

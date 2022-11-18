@@ -1,3 +1,10 @@
+<?php
+error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+echo "{$_SESSION['username']}";
+?>
 <!doctype html>
 <html lang="en">
 
@@ -12,9 +19,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-  <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+  <!-- <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet"> -->
   <title>SinauGezz</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/sinaugezz/style.css">
 </head>
 
 
@@ -27,12 +34,27 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"> <a class="nav-link" href="./index.php">Home</a> </li>
-              <li class="nav-item"> <a class="nav-link" href="./bankmateri.php">Bank Materi</a> </li>
-              <li class="nav-item"> <a class="nav-link" href="./banksoal.php">Bank Soal</a> </li>
-              <li class="nav-item"> <a class="nav-link" href="./feedback.php">Feedback</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="/sinaugezz/">Home</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="/sinaugezz/bankmateri">Bank Materi</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="/sinaugezz/banksoal">Bank Soal</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="/sinaugezz/feedback">Feedback</a> </li>
             </ul>
-            <div class="ml-lg-5"><a class="btn btn-success" href="#">Sign in</a> </div>
+            <?php
+            if($_SESSION['username'] != ""){
+              ?>
+                <div class="ml-lg-5">
+                  <a class="btn btn-success" href="/sinaugezz/signin">Sign in</a> 
+                </div>
+              <?php
+            }else{
+              ?>
+              <div class="ml-lg-5">
+                <a href="/sinaugezz/signout.php" class="btn btn-success ">Sign Out</a>
+              </div>
+              <?php
+            }
+            ?>
+
           </div>
         </div>
       </nav>
