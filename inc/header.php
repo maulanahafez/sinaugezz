@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
   <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
   <title>SinauGezz</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/sinaugezz/style.css">
 </head>
 
 
@@ -27,10 +27,10 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"> <a class="nav-link" href="./index.php">Home</a> </li>
-              <li class="nav-item"> <a class="nav-link" href="./bankmateri.php">Bank Materi</a> </li>
-              <li class="nav-item"> <a class="nav-link" href="./banksoal.php">Bank Soal</a> </li>
-              <li class="nav-item"> <a class="nav-link" href="./feedback.php">Feedback</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="/sinaugezz/">Home</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="/sinaugezz/materi">Bank Materi</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="/sinaugezz/soal">Bank Soal</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="/sinaugezz/feedback">Feedback</a> </li>
             </ul>
             <div class="ml-lg-5"><a class="btn btn-success" href="#">Sign in</a> </div>
           </div>

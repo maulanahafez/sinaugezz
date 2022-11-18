@@ -11,7 +11,7 @@
 </div>
 <div class="py-3 bg-white">
   <div class="container">
-    <p class="m-0 text-center small medium-500">Copyright &copy; SinauGezz 2022. Made with Love	&#10084;</p>
+    <p class="m-0 text-center small medium-500">Copyright &copy; SinauGezz 2022. Made with Love &#10084;</p>
   </div>
 </div>
 </div>

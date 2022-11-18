@@ -1,5 +1,5 @@
 <?php
-include('sinaugezz/inc/header.php');
+include('../inc/header.php');
 ?>
 <div class="position-relative">
   <div class="container pb-5">
@@ -52,5 +52,5 @@ include('sinaugezz/inc/header.php');
 </div>
 
 <?php
-include('sinaugezz/inc/footer.php');
+include('../inc/footer.php');
 ?>
