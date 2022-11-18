@@ -1,3 +1,9 @@
+<?php
+// include("../config/connect.php");
+if (!isset($_SESSION)) {
+  session_start();
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -21,7 +27,7 @@
 <body>
   <div class="page-wrape">
     <div class="position-relative">
-      <div class="hero-shape"></div>
+      <!-- <div class="hero-shape"></div> -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container py-2"> <a class="navbar-brand font-weight-bold" href="#">SinauGezz</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
@@ -32,7 +38,16 @@
               <li class="nav-item"> <a class="nav-link" href="/sinaugezz/soal">Bank Soal</a> </li>
               <li class="nav-item"> <a class="nav-link" href="/sinaugezz/feedback">Feedback</a> </li>
             </ul>
-            <div class="ml-lg-5"><a class="btn btn-success" href="#">Sign in</a> </div>
+            <?php if (!$_SESSION) {
+            ?>
+              <div class="ml-lg-5"><a class="btn btn-success" href="/sinaugezz/signin">Sign In</a> </div>
+            <?php
+            } else {
+            ?>
+              <div class="ml-lg-5"><a class="btn btn-success" href="/sinaugezz/signin/signout.php">Sign Out</a> </div>
+            <?php
+            }
+            ?>
           </div>
         </div>
       </nav>
