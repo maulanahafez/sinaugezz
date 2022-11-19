@@ -12,7 +12,7 @@ if (!isset($_SESSION)) {
         if ($_SESSION) {
         ?>
           <h1 class="font-weight-bold display-4 mb-4">
-            Welcome Back, <?= $_SESSION['username']; ?>
+            Welcome Back, <?= $_SESSION['name']; ?>
           </h1>
           <h1 class="font-weight-bold display-6 mb-4">
           Hoping the studying goes easily for you.
