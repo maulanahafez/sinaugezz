@@ -196,7 +196,7 @@ h6 {
   height: calc(100% - 73px);
 }
 
-.btn--signup{
+.btn--signup {
   color: #15b28b;
 }
 
@@ -205,3 +205,5 @@ h6 {
     height: 100%;
   }
 }
+
+/* dashboard */

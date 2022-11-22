@@ -31,7 +31,7 @@ $err = 0;
       <!-- <div class="hero-shape"></div> -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container py-2">
-          <a class="navbar-brand font-weight-bold" href="#">
+          <a class="navbar-brand font-weight-bold" href="/sinaugezz/">
             SinauGezz
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
@@ -40,7 +40,16 @@ $err = 0;
             <ul class="navbar-nav ml-auto">
               <?php
               if ($_SESSION) {
-              ?>
+                if ($_SESSION['username'] == "admin") {
+                  ?>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/sinaugezz/dashboard/">
+                      Dasboard
+                    </a>
+                  </li>
+                  <?php
+                }
+                ?>
                 <li class="nav-item">
                   <a class="nav-link" href="/sinaugezz/">
                     Home

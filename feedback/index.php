@@ -1,5 +1,8 @@
 <?php
 include('../inc/header.php');
+if(!$_SESSION){
+  header("location:../signin/");
+}
 ?>
 <div class="position-relative">
   <div class="container pb-5">

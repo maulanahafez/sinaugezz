@@ -5,6 +5,6 @@ session_unset();
 session_destroy();
 ?>
 <script>
-  alert("anda logout");
-  document.location = "../";
+  alert("Anda Berhasil Sign Out");
+  document.location = "/sinaugezz/";
 </script>
