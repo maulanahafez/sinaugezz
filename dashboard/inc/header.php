@@ -20,41 +20,45 @@
             <a href="/sinaugezz/" class="text-decoration-none text-white">
               <span class="fs-5 d-none d-sm-inline">SinauGezz</span>
             </a>
-            <a href="/sinaugezz/signin/signout.php/" class="text-decoration-none text-white border-light border rounded p-1 ms-5" style="transform: rotate(180deg);">
-              <span><i class="fa-solid fa-right-from-bracket"></i></span>
-            </a>
           </div>
           <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
             <li class="nav-item">
               <a href="/sinaugezz/dashboard/" class="nav-link align-middle px-0">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light">Dashboard</span>
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light"><i class="fa-solid fa-gauge me-3"></i>Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="/sinaugezz/dashboard/user/" class="nav-link align-middle px-0">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light">User</span>
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light"><i class="fa-solid fa-users me-3"></i>User</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="/sinaugezz/dashboard/mapel/" class="nav-link align-middle px-0">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light">Mapel</span>
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light"><i class="fa-solid fa-list me-3"></i>Mapel</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="/sinaugezz/dashboard/materi/" class="nav-link align-middle px-0">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light">Materi</span>
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light"><i class="fa-solid fa-book me-3"></i>Materi</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="/sinaugezz/dashboard/soal/" class="nav-link align-middle px-0">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light">Soal</span>
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light"><i class="fa-solid fa-clipboard me-3"></i>Soal</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="/sinaugezz/dashboard/feedback/" class="nav-link align-middle px-0">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light">Feedback</span>
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light"><i class="fa-solid fa-comments me-3"></i>Feedback</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/sinaugezz/signin/signout.php" class="nav-link align-middle px-0">
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-light"><i class="fa-solid fa-right-from-bracket me-3"></i>Sign Out</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
+      <div class="col py-3">
+        <a href="../" class="btn btn-sm btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back</a>

@@ -44,7 +44,7 @@ $err = 0;
                   ?>
                   <li class="nav-item">
                     <a class="nav-link" href="/sinaugezz/dashboard/">
-                      Dasboard
+                      Dashboard
                     </a>
                   </li>
                   <?php
