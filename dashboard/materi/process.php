@@ -19,7 +19,7 @@ if (isset($_POST['add'])) {
     $sql2 = "insert into materi(id_materi, id_mapel, nama_materi, desc_materi, file_materi) values ('','$id_mapel', '$nama_materi', '$desc_materi', '$file_materi')";
     $q2 = mysqli_query($conn, $sql2);
     if ($q2) {
-    ?>
+?>
       <script>
         alert("Data berhasil ditambahkan");
         document.location = "./";
@@ -86,7 +86,7 @@ if (isset($_GET['edit'])) {
         alert("Data GAGAL diperbarui");
         document.location = "./";
       </script>
-    <?php
+  <?php
     }
   }
   ?>
@@ -102,10 +102,18 @@ if (isset($_GET['edit'])) {
           <label class="form-label">Mata Pelajaran</label>
           <select name="id_mapel" class="form-select form-select-sm" required>
             <option disabled>Pilih mata pelajaran</option>
-            <option value="1" <?php if($id_mapel=='1'){echo "selected";} ?>>Matematika</option>
-            <option value="2" <?php if($id_mapel=='2'){echo "selected";} ?>>Fisika</option>
-            <option value="3" <?php if($id_mapel=='3'){echo "selected";} ?>>Kimia</option>
-            <option value="4" <?php if($id_mapel=='4'){echo "selected";} ?>>Biologi</option>
+            <option value="1" <?php if ($id_mapel == '1') {
+                                echo "selected";
+                              } ?>>Matematika</option>
+            <option value="2" <?php if ($id_mapel == '2') {
+                                echo "selected";
+                              } ?>>Fisika</option>
+            <option value="3" <?php if ($id_mapel == '3') {
+                                echo "selected";
+                              } ?>>Kimia</option>
+            <option value="4" <?php if ($id_mapel == '4') {
+                                echo "selected";
+                              } ?>>Biologi</option>
           </select>
         </div>
         <div class="mb-3">

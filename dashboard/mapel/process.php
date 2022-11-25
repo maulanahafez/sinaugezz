@@ -51,7 +51,7 @@ if (isset($_GET['delete'])) {
     <?php
   }
   // Reset AUTO_INCREMENT
-  // $id = 1;
+  // $id = 5;
   // $sql = "alter table mapel AUTO_INCREMENT=$id";
   // $query = mysqli_query($conn, $sql);
 }

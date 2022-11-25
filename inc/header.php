@@ -20,6 +20,7 @@ $err = 0;
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
   <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>SinauGezz</title>
   <link rel="stylesheet" href="/sinaugezz/style.css">
 </head>
@@ -28,7 +29,7 @@ $err = 0;
 <body>
   <div class="page-wrape">
     <div class="position-relative">
-      <!-- <div class="hero-shape"></div> -->
+      <div class="hero-shape"></div>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container py-2">
           <a class="navbar-brand font-weight-bold" href="/sinaugezz/">
@@ -41,13 +42,13 @@ $err = 0;
               <?php
               if ($_SESSION) {
                 if ($_SESSION['username'] == "admin") {
-                  ?>
+              ?>
                   <li class="nav-item">
                     <a class="nav-link" href="/sinaugezz/dashboard/">
                       Dashboard
                     </a>
                   </li>
-                  <?php
+                <?php
                 }
                 ?>
                 <li class="nav-item">
