@@ -25,6 +25,13 @@ if (isset($_POST['add'])) {
         document.location = "./";
       </script>
     <?php
+    } else {
+    ?>
+      <script>
+        alert("Data gagal ditambahkan");
+        document.location = "./";
+      </script>
+    <?php
     }
   }
 }
@@ -50,9 +57,9 @@ if (isset($_GET['delete'])) {
     <?php
   }
   // Reset AUTO_INCREMENT
-  // $id = 1;
-  // $sql = "alter table materi AUTO_INCREMENT=$id";
-  // $query = mysqli_query($conn, $sql);
+  $id = 6;
+  $sql = "alter table materi AUTO_INCREMENT=$id";
+  $query = mysqli_query($conn, $sql);
 }
 
 // EDIT DATA

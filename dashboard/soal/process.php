@@ -24,6 +24,13 @@ if (isset($_POST['add'])) {
         document.location = "./";
       </script>
     <?php
+    } else {
+    ?>
+      <script>
+        alert("Data gagal ditambahkan");
+        document.location = "./";
+      </script>
+    <?php
     }
   }
 }

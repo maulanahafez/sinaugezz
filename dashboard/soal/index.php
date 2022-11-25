@@ -19,7 +19,7 @@ $i = 1;
           <div class="mb-3">
             <label class="form-label">Mata Pelajaran</label>
             <select name="id_mapel" class="form-select form-select-sm" required>
-              <option selected disabled>Pilih mata pelajaran</option>
+              <option value="">Pilih mata pelajaran</option>
               <option value="1">Matematika</option>
               <option value="2">Fisika</option>
               <option value="3">Kimia</option>

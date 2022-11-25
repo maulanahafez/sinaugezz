@@ -19,7 +19,7 @@ $i = 1;
           <div class="mb-3">
             <label class="form-label">Mata Pelajaran</label>
             <select name="id_mapel" class="form-select form-select-sm" required>
-              <option selected disabled>Pilih mata pelajaran</option>
+              <option value="">Pilih mata pelajaran</option>
               <option value="1">Matematika</option>
               <option value="2">Fisika</option>
               <option value="3">Kimia</option>
@@ -59,7 +59,7 @@ $i = 1;
 
 <!-- Table -->
 <div class="mt-4">
-  <table class="table text-center table-striped table-hover">
+  <table class="table text-center table-striped table-hover align-middle">
     <tr>
       <th>#</th>
       <th>ID Materi</th>
@@ -75,11 +75,11 @@ $i = 1;
     ?>
       <tr>
         <td><?= $i ?></td>
-        <td><?= $row['id_materi'] ?></td>
+        <td style="width: 15%;"><?= $row['id_materi'] ?></td>
         <!-- <td><?php //$row['id_mapel'] ?></td> -->
         <td><?= $row['nama_mapel'] ?></td>
-        <td><?= $row['nama_materi'] ?></td>
-        <td><?= $row['desc_materi'] ?></td>
+        <td style="width: 10%;"><?= $row['nama_materi'] ?></td>
+        <td style="width: 20%;"><?= $row['desc_materi'] ?></td>
         <td>
           <a href="../../asset/bankmateri/<?= $row['file_materi'] ?>" target="_blank" class="btn btn-sm btn-secondary">View Online</a>
           <a href="../../asset/bankmateri/<?= $row['file_materi'] ?>" download="" class="btn btn-sm btn-secondary">Download</a>
