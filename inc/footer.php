@@ -3,7 +3,7 @@
     <div class="row pt-5">
       <div class="col-md-6 col-lg-3 mb-5">
         <h3 class="font-weight-bold mb-4">SinauGezz</h3>
-        <p class="semi-bold">Lorem ipsum dolor sit amet.</p>
+        <p class="semi-bold">Make each day a little better than before</p>
         <div class="social-icons mt-4"> <a href="#"><i class="lni lni-facebook-filled"></i></a> <a href="#"><i class="lni lni-twitter-filled"></i></a> <a href="#"><i class="lni lni-instagram-filled"></i></a> <a href="#"><i class="lni lni-github-original"></i></a> </div>
       </div>
     </div>

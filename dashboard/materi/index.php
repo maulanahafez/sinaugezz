@@ -62,8 +62,8 @@ $i = 1;
   <table class="table text-center table-striped table-hover align-middle">
     <tr>
       <th>#</th>
-      <th>ID Materi</th>
-      <!-- <th>ID Mapel</th> -->
+      <th class="d-none">ID Materi</th>
+      <th class="d-none">ID Mapel</th>
       <th>Nama Mapel</th>
       <th>Nama Materi</th>
       <th>Deskripsi Materi</th>
@@ -75,8 +75,8 @@ $i = 1;
     ?>
       <tr>
         <td><?= $i ?></td>
-        <td style="width: 15%;"><?= $row['id_materi'] ?></td>
-        <!-- <td><?php //$row['id_mapel'] ?></td> -->
+        <td style="width: 15%;" class="d-none"><?= $row['id_materi'] ?></td>
+        <td class="d-none"><?= $row['id_mapel'] ?></td>
         <td><?= $row['nama_mapel'] ?></td>
         <td style="width: 10%;"><?= $row['nama_materi'] ?></td>
         <td style="width: 20%;"><?= $row['desc_materi'] ?></td>

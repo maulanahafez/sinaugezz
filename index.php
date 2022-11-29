@@ -21,10 +21,10 @@ if (!isset($_SESSION)) {
         } else {
         ?>
           <h1 class="font-weight-bold display-4 mb-4">
-            Our tutors offers face-to-face and online tuition.
+            Kami Menyediakan Bank Materi dan Bank Soal.
           </h1>
           <p class="lead mb-3">
-            Our focus - modular training programs from leading practice lectors.
+            Our focus - memudahkan siswa dalam mengakses materi maupun soal dimanapun dan kapanpun.
           </p>
         <?php
         }

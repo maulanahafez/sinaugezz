@@ -17,7 +17,7 @@ if (isset($_POST['signin'])) {
         $_SESSION['name'] = $row['nama_user'];
         ?>
         <script>
-          alert("Anda adalah admin");
+          alert("Selamat Datang Kembali admin");
           document.location = "../dashboard";
           </script>
         <?php

@@ -42,7 +42,7 @@ $i = 1;
   <table class="table text-center table-striped table-hover">
     <tr>
       <th>#</th>
-      <th>ID Mapel</th>
+      <th class="d-none">ID Mapel</th>
       <th>Nama Mapel</th>
       <th colspan="2">Action</th>
     </tr>
@@ -51,7 +51,7 @@ $i = 1;
     ?>
       <tr>
         <td><?= $i ?></td>
-        <td><?= $row['id_mapel'] ?></td>
+        <td class="d-none"><?= $row['id_mapel'] ?></td>
         <td><?= $row['nama_mapel'] ?></td>
         <td>
           <a href="./process.php?edit=<?= $row['id_mapel'] ?>" class="btn btn-success btn-sm">Edit</a>

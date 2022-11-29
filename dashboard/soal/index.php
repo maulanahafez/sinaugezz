@@ -58,8 +58,8 @@ $i = 1;
   <table class="table text-center table-striped table-hover">
     <tr>
       <th>#</th>
-      <th>ID Soal</th>
-      <!-- <th>ID Mapel</th> -->
+      <th class="d-none">ID Soal</th>
+      <th class="d-none">ID Mapel</th>
       <th>Nama Mapel</th>
       <th>Nama Soal</th>
       <th>File Soal</th>
@@ -70,8 +70,8 @@ $i = 1;
     ?>
       <tr>
         <td><?= $i ?></td>
-        <td><?= $row['id_soal'] ?></td>
-        <!-- <td><?php //$row['id_mapel'] ?></td> -->
+        <td class="d-none"><?= $row['id_soal'] ?></td>
+        <td class="d-none"><?= $row['id_mapel'] ?></td>
         <td><?= $row['nama_mapel'] ?></td>
         <td><?= $row['nama_soal'] ?></td>
         <td>
